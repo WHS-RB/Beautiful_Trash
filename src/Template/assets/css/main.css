@@ -3747,6 +3747,11 @@
 				font-size: .8em;
 				color: rgba(255, 255, 255, 0.65);
 			}
+			#header > .logo #homelogo {
+				font-size: 1.25em;
+				color: #FFF;
+				text-decoration: none;
+			}
 
 		#header > a {
 			-moz-transition: color 0.2s ease-in-out;
@@ -4310,3 +4315,4 @@
 			}
 
 		}
+		
