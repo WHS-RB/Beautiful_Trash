@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Purchase - AVP_HS </title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	</head>
+	<body bgcolor = #d0cad0>
+		<div id="bottomlinks">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="About_Us.html">About Us</a></li>
+				<li><a href="Contact_Us.html">Contact Us</a></li>
+				<li><a href="Members.html">Members</a></li>
+				<li><a href="Student_Stuff.html">Student Stuff</a></li>
+				<li><a href="Donate.html">Donate</a></li>
+				<li>Purchase</li>
+				<li><a href="F.A.Q.html">F.A.Q</a></li>
+				<li><a href="Join.html">Join</a></li>
+			</ul>
+		</div>
+		<h1> Purchase </h1>
+		<div>
+			<form action="PURCHASE.php" method="post"> <!-- PHP HAS NOT BEEN TESTED -->
+				<p>Name:</p> <input type="text" name="name"><br>
+				<span class="error">req.<?php echo $nameError;?></span><br>
+
+				<p>School:</p> <input type="text" name="school"><br>
+				<span class="error">req.<?php echo $schoolError;?></span><br>
+
+				<p>Email:</p> <input type="text" name="email"><br>
+				<span class="error">req.<?php echo $emailError;?></span><br>
+
+				<input type="submit">
+			</form>
+			<h5><i> We will shortly contact you after you submit the above form.<br>
+			Cost of vehicle is on a case-by-case basis and is based upon what you can pay, no more than {}{}{} USD. <!--COST????-->
+			<br>They are subsidized by the generous donors found on the list <a href= "Donate.html">here</a>.</i></h5>
+		</div>
+	</body>
+</html>
+
+<style type='text/css'>
+	h1{
+		text-align: center;
+	}
+	#bottomlinks{
+		bottom: 0%;
+		height: 72px;
+		line-height: 72px;
+		max-width: max-content;
+		text-align: center;
+		horizontal-align: center;
+		margin: auto;
+		background-color: #dca460;
+	}
+	div{
+		background-color: #a8bfcb;
+	}
+	p{
+		font-family: Tahoma, Geneva, sans-serif;
+		text-align: center;
+	}
+	ul{
+		margin:0px auto;
+		padding:0px;
+		list-style: none;
+		content-align: center;
+	}
+	li{
+		margin:3px;
+		padding:0px;
+		display: inline;
+		content-align: center;
+	}
+	form{
+		text-align: center;
+	}
+	h1{
+		text-align: center;
+	}
+	body{
+		overflow-y: scroll;
+	}
+	h2{
+		text-align: center;
+	}
+</style>
