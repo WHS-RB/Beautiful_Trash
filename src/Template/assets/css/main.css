@@ -3921,6 +3921,16 @@
 						text-transform: uppercase;
 					}
 
+					#menu > ul.links > li > #curpage{
+						border: 0;
+						border-top: solid 1px rgba(255, 255, 255, 0.125);
+						color: #CCC;
+						display: block;
+						line-height: 3.5rem;
+						text-decoration: none;
+						text-transform: uppercase;
+					}
+
 						#menu > ul.links > li > a:not(.button):hover {
 							color: #FFF;
 						}
