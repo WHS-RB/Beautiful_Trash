@@ -4,6 +4,7 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
+
 <html>
 
 <head>
@@ -77,37 +78,36 @@
 						<p>Purchase</p>
 						<h2>Purchase Form</h2>
 					</header>
-					<form action="PURCHASE.php" method="post">
-						<!-- PHP HAS NOT BEEN TESTED -->
+					<form method="post" action = "testpurchase.php">
 						<p>Name (required:)</p>
+						<span class="error">
+						</span>
 						<input type="text" name="name">
 						<br>
-						<span class="error">
-							<?php echo $nameError;?>
-						</span>
 						<br>
 
 						<p>School (required:)</p>
-						<input type="text" name="school">
-						<br>
 						<span class="error">
-							<?php echo $schoolError;?>
 						</span>
+						<input type="text" name="comments">
+						<br>
 						<br>
 
 						<p>Email (required:) </p>
+						<span class="error">
+						</span>
 						<input type="text" name="email">
 						<br>
-						<span class="error">
-							<?php echo $emailError;?>
-						</span>
 						<br>
 
 						<input type="submit">
 					</form>
 
 					<p>We will shortly contact you after you submit the above form. The cost of the vehicle is decided on a case-by-case basis
-						and is based upon what you can pay, no more than {}{}{} USD. The price is subsidized by the generous donors found on the list <a href = "Donate.html">here</a>.</a></p>
+						and is based upon what you can pay, no more than {}{}{} USD. The price is subsidized by the generous donors found on
+						the list
+						<a href="Donate.html">here</a>.
+					</p>
 				</div>
 			</div>
 		</div>

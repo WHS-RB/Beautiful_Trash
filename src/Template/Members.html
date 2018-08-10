@@ -103,7 +103,7 @@
 						The Arduino turns all the program's outputs into the car's outputs. First, it inputs from program to serial port, then
 						goes to the Arduino. After, it reads pin numbers and angles and turns them into Pulsewidth Modulation (PWM.) Hardware
 						Integration also includes the kill switch which stops the car. They are working on stopping the car on timeout or if
-						it loses connection and displaying error messages. Another minor job of the group is to keep the car's software up
+						it loses connection and displaying error messages. Another major job of the group is to keep the car's software up
 						to date, integrate other groups' code, run tests, and make the car run.</p>
 				</div>
 				<div class="content">
@@ -114,10 +114,25 @@
 					<p>The image group is responsible for turning real-world images into a format useful to a computer. They manage the camera's
 						Bayer8 input and process it in different ways for different groups. For example, they convert it to a black and white
 						image for the steering group but convert it into a simplified color image for the speed group. One problem the image
-						group faces is dealing with image noise, which includes background objects and irregular lighting. They use an erosion
-						filter to remove this noise and make the image easier to process. Lastly, they deal with how the image is displayed
-						on the software. In the future, the image group would like to utilize real-time threshold adjustment to change certain
-						parameters based on the image as well as better line detection.
+						group faces is dealing with image noise, which includes background objects and irregular lighting. They are currently
+						using an erosion filter to remove this noise and make the image easier to process. Lastly, they deal with how the image
+						is displayed on the software. In the future, the image group would like to utilize real-time threshold adjustment to
+						change certain parameters based on the image as well as better line detection.
+				</div>
+				<div class="content">
+					<header class="align-center">
+						<p>Jonathan Edelman, Eric Fan, Kevin Man, Rudy Peralta </p>
+						<h2>Raspberry Pi</h2>
+					</header>
+					<p> The Raspberry Pi group sought to make the car cheaper while maintaining sufficient processing power. They decided to
+						replace the LattePanda with a Raspberry Pi and the camera with a Raspicam. The first step to replacing the LattePanda
+						was to implement the Arduino's functions on the Raspberry Pi. Next, they had to get the Raspicam to send the image
+						data to the program. The current camera outputs Bayer8 encoding, which is then debayered into RGB format. Luckily for
+						them, the Raspicam already has software to pull image data from the camera in any format using the terminal.Using the
+						Raspberry Pi could reduce the cost by hundreds of dollars, so their next step would be to create a car using the Raspberry
+						Pi instead of the LattePanda setup.
+
+					</p>
 				</div>
 				<div class="content">
 					<header class="align-center">
