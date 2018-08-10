@@ -85,6 +85,10 @@
 	.container {
 		width: 80rem;
 	}
+	#videoStuff{
+		display: block;
+		margin: 0 auto;
+	}
 
 	@media screen and (max-width: 1680px) {
 
